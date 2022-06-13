@@ -1,3 +1,3 @@
 ### Hi there 👋
 
-[![HitCount](https://hits.dwyl.com/GabriewF/GabriewF.svg)](http://hits.dwyl.com/GabriewF/GabriewF)
+[![Unique Views](https://hits.dwyl.com/GabriewF/GabriewF.svg?style=flat&show=unique)](http://hits.dwyl.com/GabriewF/GabriewF)
