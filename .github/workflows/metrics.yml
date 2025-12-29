@@ -29,13 +29,21 @@ jobs:
           user: GabriewF
           template: classic
           base: header, activity, community, repositories, metadata
+          
+          # Config
           config_display: large
-          config_octicon: yes
           config_timezone: America/Fortaleza
+          config_octicon: yes
           config_twemoji: yes
+
+          # Gists
           plugin_gists: yes
+
+          # Calendar
           plugin_isocalendar: yes
           plugin_isocalendar_duration: half-year
+
+          # Languages
           plugin_languages: yes
           plugin_languages_analysis_timeout: 15
           plugin_languages_analysis_timeout_repositories: 7.5
@@ -48,19 +56,30 @@ jobs:
           plugin_languages_recent_load: 300
           plugin_languages_sections: most-used
           plugin_languages_threshold: 0%
+
+          # Lines of Code
           plugin_lines: yes
           plugin_lines_history_limit: 1
           plugin_lines_repositories_limit: 4
           plugin_lines_sections: base
+          
+          # Music
           plugin_music: yes
           plugin_music_limit: 4
-          plugin_music_mode: top
-          plugin_music_provider: lastfm
-          plugin_music_time_range: short
+          plugin_music_mode: recent
           plugin_music_top_type: tracks
-          plugin_music_user: gabriewf
+          plugin_music_time_range: medium
+          plugin_music_played_at: yes
+          
+          plugin_music_provider: lastfm
+          plugin_music_user: GabriewF
+          plugin_music_token: ${{ secrets.LASTFM_TOKEN }}
+          
+          # Stars
           plugin_stars: yes
           plugin_stars_limit: 4
+          
+          # Steam
           plugin_steam: yes
           plugin_steam_achievements_limit: 2
           plugin_steam_games_limit: 1
@@ -68,4 +87,6 @@ jobs:
           plugin_steam_recent_games_limit: 1
           plugin_steam_sections: player, most-played, recently-played
           plugin_steam_user: 76561199160988094
+
+          # Traffic
           plugin_traffic: yes
